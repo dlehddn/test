@@ -6,7 +6,7 @@ spec:
   replicas: 1  # 예시로 추가한 부분. 필요에 따라 조절하세요.
   selector:
     matchLabels:
-      app: test
+      app: backend
       role: backend
       env: production
   template:
