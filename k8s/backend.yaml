@@ -3,6 +3,11 @@ kind: Deployment
 metadata:
   name: my-backend-app
 spec:
+  selector:
+    matchLabels:
+      app: test
+      role: backend
+      env: production
     template:
         metadata:
             labels:
