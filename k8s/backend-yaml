@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+spec:
+    template:
+        metadata:
+            labels:
+                app: backend
+        spec:
+            containers:
+                - name: backend
+                  image: krmp-d2hub-idock.9rum.cc/dev-test/repo_33b3771c24a0
+                  imagePullPolicy: Always
+                  ports:
+                      - containerPort: 8080
